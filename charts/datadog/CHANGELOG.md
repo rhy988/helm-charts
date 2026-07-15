@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 3.232.0
+
+* [PROF-15317] allow helm to use logging seccomp ([#2775](https://github.com/DataDog/helm-charts/pull/2775)).
+
 ## 3.231.2
 
 * Update the Go Dynamic Instrumentation cache volume mount to `/opt/datadog-agent/run/system-probe/dynamic-instrumentation`, matching the Agent's relocation of that writable state out of `/tmp`, so the SymDB upload cache, probe tombstone, and decompressed debug info persist across container restarts again.
